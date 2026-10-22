@@ -67,7 +67,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/numint@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/numint@sha256:c5c6c1c6b9263b6f1db26f0362c8d663b190b8d3d083e2bea02fdcc3d078659a
   platforms: [linux/amd64, linux/arm64]
   command: ["numint", "scan", "{phone}", "--offline", "--api", "--json", "--no-cache", "--country", "{country}"]
   output_format: json
